@@ -1,5 +1,9 @@
 def sum(lst, n):
-    # Your code here!
+    sum_total = 0
+    for item in lst:
+        sum_total += item
+    if sum_total == n:
+        return True
     return False
 
 def test():
