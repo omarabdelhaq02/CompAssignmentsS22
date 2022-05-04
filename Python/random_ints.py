@@ -2,6 +2,14 @@ import random
 
 def random_ints():
     # Your code here!
+    new_digit = 0
+    digit_list = []
+    while new_digit != 6:
+        new_digit = (int)(random.random()*10)
+        while new_digit == 0:
+            new_digit = (int)(random.random()*10)
+        digit_list.append(new_digit)
+    return digit_list
 
 
 def test():
